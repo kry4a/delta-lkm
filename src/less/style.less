@@ -1074,18 +1074,11 @@ p.date {
 .product-page, .product-sale {
 	margin-bottom: 40px;
 }
-.product-page .custom-select select {
-	 width: 60px;
-}
 
-.product-page .custom-select {
-    position: absolute;
-    right: 50px;
-}
 .product-page h1 {
-	font-size: 36px;
+	font-size: 31px;
 	line-height: 42px;
-	margin-bottom: 20px;
+	margin-bottom: 5px;
 }
 .product-page .container {
 	padding: 0;
@@ -1119,14 +1112,13 @@ p.date {
 	padding: 0 10px;
 }
 .product-page-info p {
-	font-size: 12px;
+	font-size: 14px;
 	margin-bottom: 25px;	
 }
 
 .product-page-thumb {
 	width: 400px;
 	margin-right: 40px;
-	border: 1px solid #DBDCDE;
 	position: relative;
 }
 .product-page-thumb img {
@@ -1323,17 +1315,18 @@ p.date {
 .custom-select select {
     display: inline-block;
     border: none;
-    padding-left: 10px;
+    padding: 0 15px 0 10px;
     height: 25px;
     line-height: 25px;
     margin: 0;
-    margin-left: 20px;
+    margin-left: 5px;
     font: inherit;
     outline:none; /* remove focus ring from Webkit */
     background: #fff;
     -webkit-appearance:none; /* remove the strong OSX influence from Webkit */
     cursor:pointer;
     font-size: 12px;
+    min-width: 60px;
 }
 
 .custom-select select:disabled {
@@ -1448,6 +1441,13 @@ h4.panel-title,
         padding-right:30px;    
     }
 }
+.custom-select {
+	position: relative;
+	display: inline-block;
+	height: 25px;
+	margin-right: 15px;
+}
+
 .custom-select:before {
 	font-family: FontAwesome;
     content: "\f107";
@@ -1456,16 +1456,11 @@ h4.panel-title,
     right: 0;
     bottom: 0;
     width: 25px;
+    height: 25px;
     padding: 0 9px;
     background: #DADEE1;
     pointer-events:none;
     line-height: 28px;
-}
-.product-page .custom-select:after {
-	content: "шт.";
-	position: absolute;
-	right: -30px;
-    line-height: 25px;
 }
 
 
@@ -1770,4 +1765,71 @@ div.colour{
   position: absolute;
   top: 0;
   left: 0;
+}
+
+
+.product-types {
+	position: absolute;
+	top: 0;
+	width: 100%;
+
+	padding: 0;
+	font-size: 0;
+	
+	
+	&__item {
+		position: relative;
+		padding: 30px 15px 0 15px;
+		display: inline-block;
+		background-color: #EDEEF0;
+		
+		border-right: 1px solid #DBDCDE;
+		
+		cursor:pointer;
+		height: 60px;
+
+		transition: all 0.3s ease;
+		&--active,&:hover {
+			background-color: #FF7300;
+
+			span {
+				color: #ffffff;
+			}
+		}
+
+		&--active:after {
+			content: "";
+			position: absolute;
+			
+			bottom: -5px;
+			left: 0;
+			right: 0;
+			margin:auto;
+			width: 5px;
+			
+			border-left: 5px solid transparent;
+			border-right: 5px solid transparent;
+			border-top: 5px solid #FF7300;
+			
+		}
+
+		&:last-child {
+			border:none;
+		}
+	}
+	
+	&__volume, &__price {
+		display: block;
+		width: 100%;
+	}
+	&__volume {
+		font-size: 12px;
+		position: absolute;
+		top:5px;
+		left: 15px;
+	}
+
+	&__price {
+		font-size: 16px;
+	}
 }

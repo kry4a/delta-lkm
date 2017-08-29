@@ -52,24 +52,33 @@
   <main>
     <section class="category">
       <div class="container">
-        <h1>Интерьерные краски</h1>
         <ul class="breadcrumbs">
-          <li><a href="/">Главная</a></li>
-          <li><a href="/catalog.php">Каталог продукции</a></li>
-          <li>Tikkurila Eвро Фасад Аква</li>
+          <li><a href="http://delta-lkm.ru/"><i class="fa fa-home"></i></a></li>
+           <li><a href="http://delta-lkm.ru/interior-paints/">Интерьерные краски</a></li>
+           <li><a href="http://delta-lkm.ru/interior-paints/walls/">Краска для стен</a></li>
+           <li>JOKER шелковистая краска </li>
         </ul>
       </div>
     </section>
     <section class="product-page">
       <div class="container">
         <div class="product-page-thumb">
-          <img src="img/product_big_1.png" alt="">
-          <a class="billet green" href="#">Новинка</a>
-          <ul class="vals">
-            <li class="value value-3" title="3 литра"></li>
-            <li class="value value-10" title="10 литров"></li>
-            <li class="value value-20" title="20 литров"></li>
+          <ul class="product-types">
+            <li class="product-types__item product-types__item--active">
+              <span class="product-types__volume">3 литра</span>
+              <span class="product-types__price">1445 р.</span>
+            </li>
+            <li class="product-types__item">
+              <span class="product-types__volume">10 литров</span>
+              <span class="product-types__price">2340 р.</span>
+            </li>
+            <li class="product-types__item">
+              <span class="product-types__volume">20 литров</span>
+              <span class="product-types__price">3400 р.</span>
+            </li>
+            
           </ul>
+          <img src="img/product_big_1.png" alt="">
         </div><div class="product-page-desc">
           <div class="product-page-info">
             <h1>Tikkurila Eвро Фасад Аква</h1>
@@ -82,47 +91,26 @@
           </div>
           <div class="product-options">
             <div class="option-wrapper">
-              <input type="checkbox" name="option-1" id="option-1" class="radio">
-              <label for="option-1"><span class="option-price">1445 руб.</span> 3 литра</label>
               <label class="custom-select" for="count-1">
-                <span>Количество </span>
+                <span>Количество: </span>
                 <select name="count-1" id="count-1" class="option-count">
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
+                  <option value="1"> 1 </option>
+                  <option value="2"> 2 </option>
+                  <option value="3"> 3 </option>
+              </select>
+              </label>
+              <label class="custom-select" for="count-1">
+                <span>Объем: </span>
+                <select name="count-1" id="count-1" class="option-count">
+                  <option value="1">3 литра</option>
+                  <option value="2">10 литров</option>
+                  <option value="3">20 литров</option>
                 </select>
               </label>
             </div>
-            <div class="option-wrapper">
-              <input type="checkbox" name="option-2" id="option-2" class="radio">
-              <label for="option-2"><span class="option-price">2340 руб.</span> 10 литров</label>
-              <label class="custom-select" for="count-1">
-                <span>Количество </span>
-                <select name="count-1" id="count-1" class="option-count">
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                </select>
-              </label>   
-            </div>
-            <div class="option-wrapper">
-              <input type="checkbox" name="option-3" id="option-3" class="radio">
-              <label for="option-3"><span class="option-price">3400 руб.</span> 20 литров</label>
-              <label class="custom-select" for="count-1">
-                <span>Количество </span>
-                <select name="count-1" id="count-1" class="option-count">
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                </select>
-              </label>
-            </div>
-            <hr/>
+            
             <div class="total">
-              <p>Итого <span>6225 руб.</span></p>
+              <p>Цена: <span>6225 руб.</span></p>
               <button type="button" class="button-orange">В корзину</button>
             </div>
           </div>
