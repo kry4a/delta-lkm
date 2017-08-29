@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Delta</title>
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />  
+  <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css"  media="screen" />
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <!--[if lt IE 9]>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <nav class="splash" id="splash">
+    <div class="container">
+      <ul class="menu topmenu">
+        <li><a href="">О Компании</a></li>
+        <li><a href="">Портфолио</a></li>
+        <li><a href="">Доставка</a></li>
+        <li><a href="">Контакты</a></li>
+      </ul>
+      <div class="contacts">
+        <p>Санкт-Петербург,  ул. Швецова, д.12, корп. 2</p>
+        <p><span class="semi">+7 (812) 327-57-65</span> (64, 66)</p>
+      </div>
+      <div class="cart">
+        <p><i class="fa fa-shopping-cart"></i> Корзина</p>
+        <p>У вас <span>3 товара</span> на сумму <span>3500 рублей</span></p>
+      </div>
+    </div>
+  </nav>
+  <header id="header" class="grey">
+    <div class="container">
+      <div class="logo fleft">
+        <a href="/" title="">
+          <img src="img/logo.png" alt="Логотип">    
+        </a>
+      </div>
+      <nav class="fright">
+        <ul class="menu menumain">
+          <li><a href="catalog.php">Каталог продукции</a></li>
+          <li><a href="catalog.php">Каталог цветов</a></li>
+          <li><a href="text.php">Полезное</a></li>
+          <li><a href="#">Распродажа</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="category">
+      <div class="container">
+        <h1>Каталог продукции</h1>
+        <ul class="breadcrumbs">
+          <li><a href="/">Главная</a></li>
+          <li>Каталог продукции</li>
+        </ul>
+      </div>
+    </section>
+    <section class="fw">
+      <div class="container">
+        <form action="" class="filters">
+          <div class="filter-block"><label class="custom-select" for="">Бренд
+              <select type="text" class="filter">
+                <option value="0">Все</option>
+                <option value="1">Tikkurila</option>
+                <option value="2">Finncolor</option>
+                <option value="3">Рогнеда</option>
+                <option value="4">Teknos</option>
+              </select>
+            </label>
+          </div>
+          <div class="filter-block">
+            <label class="custom-select" for="">Вид ЛКМ
+              <select type="text" class="filter">
+                <option value="0">Все</option>
+                <option value="1">Антисептик</option>
+                <option value="2">Воск/масло</option>
+                <option value="3">Грунтовка</option>
+                <option value="4">Краска</option>
+                <option value="5">Лак</option>
+                <option value="6">Растворитель</option>
+                <option value="7">Специальные средства</option>
+              </select>
+            </label>
+          </div>
+          <div class="filter-block">
+            <label class="custom-select" for="">Вид поверхности
+              <select type="text" class="filter">
+                <option value="0">Все</option>
+                <option value="1">Деревянные</option>
+                <option value="2">Металлические</option>
+                <option value="3">Минеральные</option>
+              </select>
+            </label>
+          </div>
+          <div class="filter-block">
+            <label class="custom-select" for="">Вид работ
+              <select type="text" class="filter">
+                <option value="0">Все</option>
+                <option value="1">Внутри</option>
+                <option value="2">Снаружи</option>
+              </select>
+            </label>
+          </div>
+          <div class="filter-block">
+            <label class="custom-select" for="">Разбавитель
+              <select type="text" class="filter">
+                <option value="0">Все</option>
+                <option value="1">Вода</option>
+                <option value="2">Растворитель</option>
+              </select>
+            </label>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section class="fw">
+      <div class="container">
+        <aside>
+          <ul class="sidemenu">
+            <span>Каталог товаров</span>
+            <li><a href="#">В алфавитном порядке</a></li>
+            <li class="dropdown open">
+              <a href="#">Интерьерные краски</a>
+              <ul class="childmenu">
+                <li><a href="#">Стены</a></li>
+                <li><a href="#">Потолки</a></li>
+                <li><a href="#">Ванная</a></li>
+                <li><a href="#">Баня</a></li>
+                <li><a href="#">Мебель</a></li>
+                <li><a href="#">Металлические поверхности</a></li>
+                <li><a href="#">Декоративные материалы</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#">Наружные краски</a>
+              <ul class="childmenu">
+                <li><a href="#">Деревянные фасады и заборы</a></li>
+                <li><a href="#">Террасы и садовая мебель</a></li>
+                <li><a href="#">Кровля</a></li>
+                <li><a href="#">Металлические поверхности</a></li>
+                <li><a href="#">Каменные фасады и цоколь</a></li>
+              </ul>
+            </li>
+            <li class="dropdown"><a href="#">Лаки</a></li>
+            <li class="dropdown"><a href="#">Огнезащита</a></li>
+            <li><a href="#">Шпатлевки и мастики</a></li>
+            <li><a href="#">Металлические ведра и банки</a></li>
+            <li><a href="#">Металлические барабаны</a></li>
+            <li><a href="#">Порошковые краски</a></li>
+          </ul>
+        </aside><div class="catalog">
+          <div class="products">
+            <div class="product">
+              <div class="product-thumb">
+                <a class="fancy" href="img/product_1.png" >
+                  <img src="img/product_1.png" alt="Картинка товара">
+                </a>
+              </div>
+              <div class="product-info">
+                <h2><a href="product.php">Tikkurila<br/>Евро Фасад Аква</a></h2>
+                <p class="price"> Цена от <span>1445 руб.</span></p>
+                <div class="to-cart-block">
+                  <button type="button" class="to-cart">В корзину</button>
+                  <span></span>
+                </div>
+              </div>
+            </div><div class="product">
+              <div class="product-thumb">
+                <a class="fancy" href="img/product_1.png">
+                  <img src="img/product_2.png" alt="Картинка товара">
+                </a>
+              </div>
+              <div class="product-info">
+                <h2><a href="product.php">Tikkurila Новасил<br/>фасадная краска</a></h2>
+                <p class="price"> Цена от <span>1350 руб.</span></p>
+                <div class="to-cart-block">
+                  <button type="button" class="to-cart">В корзину</button>
+                  <span></span>
+                </div>
+              </div>
+            </div><div class="product">
+              <div class="product-thumb">
+                <a class="fancy" href="img/product_1.png">
+                  <img src="img/product_3.png" alt="Картинка товара">
+                </a>
+              </div>
+              <div class="product-info">
+                <h2><a href="product.php">Tikkurila Финнгард<br/>силиконовая краска</a></h2>
+                <p class="price"> Цена от <span>1200 руб.</span></p>
+                <div class="to-cart-block">
+                  <button type="button" class="to-cart">В корзину</button>
+                  <span></span>
+                </div>
+              </div> 
+            </div><div class="product">
+              <div class="product-thumb">
+                <a class="fancy" href="img/product_1.png">
+                  <img src="img/product_4.png" alt="Картинка товара">
+                </a>
+              </div>
+              <div class="product-info">
+                <h2><a href="product.php">Финнгард 3,0 H<br/>затираемое покрытие</a></h2>
+                <p class="price"> Цена от <span>2010 руб.</span></p>
+                <div class="to-cart-block">
+                  <button type="button" class="to-cart">В корзину</button>
+                  <span></span>
+                </div>
+              </div>  
+              <a class="billet green" href="#">Новинка</a>
+            </div>
+          </div>
+          <div class="products">
+            <div class="product">
+              <div class="product-thumb">
+                <a class="fancy" href="img/product_1.png" >
+                  <img src="img/product_1.png" alt="Картинка товара">
+                </a>  
+              </div>
+              <div class="product-info">
+                <h2><a href="product.php">Tikkurila<br/>Евро Фасад Аква</a></h2>
+                <p class="price"> Цена от <span>1445 руб.</span></p>
+                <div class="to-cart-block">
+                  <button type="button" class="to-cart">В корзину</button>
+                  <span></span>
+                </div>
+              </div>
+            </div><div class="product">
+              <div class="product-thumb">
+                <a class="fancy" href="img/product_1.png">
+                  <img src="img/product_2.png" alt="Картинка товара">
+                </a>
+              </div>
+              <div class="product-info">
+                <h2><a href="product.php">Tikkurila Новасил<br/>фасадная краска</a></h2>
+                <p class="price"> Цена от <span>1350 руб.</span></p>
+                <div class="to-cart-block">
+                  <button type="button" class="to-cart">В корзину</button>
+                  <span></span>
+                </div>
+              </div>
+            </div><div class="product onsale">
+              <div class="product-thumb">
+                <a class="fancy" href="img/product_1.png">
+                  <img src="img/product_3.png" alt="Картинка товара">
+                </a>
+              </div>
+              <div class="product-info">
+                <h2><a href="product.php">Tikkurila Финнгард<br/>силиконовая краска</a></h2>
+                <p class="price"> Цена от <span>1200 руб.</span></p>
+                <div class="to-cart-block">
+                  <button type="button" class="to-cart">В корзину</button>
+                  <span></span>
+                </div>
+              </div>
+              <a href="#" class="billet orange">-20%</a> 
+            </div><div class="product">
+              <div class="product-thumb">
+                <a class="fancy" href="img/product_1.png">
+                  <img src="img/product_4.png" alt="Картинка товара">
+                </a>
+              </div>
+              <div class="product-info">
+                <h2><a href="product.php">Финнгард 3,0 H<br/>затираемое покрытие</a></h2>
+                <p class="price"> Цена от <span>2010 руб.</span></p>
+                <div class="to-cart-block">
+                  <button type="button" class="to-cart">В корзину</button>
+                  <span></span>
+                </div>
+              </div>  
+            </div>
+          </div>
+          <div class="products">
+            <div class="product">
+              <div class="product-thumb">
+                <a class="fancy" href="img/product_1.png" >
+                  <img src="img/product_1.png" alt="Картинка товара">
+                </a>
+              </div>
+              <div class="product-info">
+                <h2><a href="product.php">Tikkurila<br/>Евро Фасад Аква</a></h2>
+                <p class="price"> Цена от <span>1445 руб.</span></p>
+                <div class="to-cart-block">
+                  <button type="button" class="to-cart">В корзину</button>
+                  <span></span>
+                </div>
+              </div>
+            </div><div class="product">
+              <div class="product-thumb">
+                <a class="fancy" href="img/product_1.png">
+                  <img src="img/product_2.png" alt="Картинка товара">
+                </a>
+              </div>
+              <div class="product-info">
+                <h2><a href="product.php">Tikkurila Новасил<br/>фасадная краска</a></h2>
+                <p class="price"> Цена от <span>1350 руб.</span></p>
+                <div class="to-cart-block">
+                  <button type="button" class="to-cart">В корзину</button>
+                  <span></span>
+                </div>
+              </div>
+            </div><div class="product">
+              <div class="product-thumb">
+                <a class="fancy" href="img/product_1.png">
+                  <img src="img/product_3.png" alt="Картинка товара">
+                </a>
+              </div>
+              <div class="product-info">
+                <h2><a href="product.php">Tikkurila Финнгард<br/>силиконовая краска</a></h2>
+                <p class="price"> Цена от <span>1200 руб.</span></p>
+                <div class="to-cart-block">
+                  <button type="button" class="to-cart">В корзину</button>
+                  <span></span>
+                </div>
+              </div> 
+            </div><div class="product">
+              <div class="product-thumb">
+                <a class="fancy" href="img/product_1.png">
+                  <img src="img/product_4.png" alt="Картинка товара">
+                </a>
+              </div>
+              <div class="product-info">
+                <h2><a href="product.php">Финнгард 3,0 H<br/>затираемое покрытие</a></h2>
+                <p class="price"> Цена от <span>2010 руб.</span></p>
+                <div class="to-cart-block">
+                  <button type="button" class="to-cart">В корзину</button>
+                  <span></span>
+                </div>
+              </div>  
+              <a class="billet green" href="#">Новинка</a>
+            </div>
+          </div>
+          <ul class="pagination">
+            <li><a href="#">Предыдущая</a></li>
+            <li><a href="#">1</a></li>
+            <li class="active"><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">...</a></li>
+            <li><a href="#">16</a></li>
+            <li><a href="#">Следующая</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container">
+      <div class="logo fleft">
+        <img src="img/logo2.png" alt="Логотип">
+      </div>
+      <nav class="fright">
+        <ul class="menu menufooter">
+          <li><a href="catalog.php">Каталог продукции</a></li>
+          <li><a href="catalog.php">Каталог цветов</a></li>
+          <li><a href="text.php">Полезное</a></li>
+          <li><a href="#">Распродажа</a></li>
+        </ul><a href="#" class="button-orange callback">Заказать звонок</a>
+      </nav>
+    </div>
+    <div class="container">
+      <div class="fleft">
+        <p class="age">Работаем для вас <br/>с 1997 года.</p>
+      </div>
+      <div class="fleft">
+        <ul class="submenu">
+          <li><a href="#">О компании</a></li>
+          <li><a href="#">Портфолио</a></li>
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+        <div class="about">
+          <div itemtype="http://schema.org/Organization" itemscope="">
+            <span itemprop="name">ООО «Дельта»</span>
+            <div itemtype="http://schema.org/PostalAddress" itemscope="" itemprop="address">
+              <span class="glyphicon glyphicon-home"></span>
+              <span itemprop="postalCode"> 192102</span>,
+              <span itemprop="addressLocality">г. Санкт-Петербург</span>,
+              <span itemprop="streetAddress">ул. Швецова д.12, корп. 2</span>
+            </div>
+            <p><span itemprop="telephone">7 (812) 327-57-65 (64, 66), 252-12-77</span></p>
+            <a href="#">показать на карте</a>
+            
+          </div>
+        </div> 
+      </div>
+    </div>
+  </footer>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <script type="text/javascript" src="js/jquery.fancybox.mini.js"></script>
+  <script type="text/javascript">
+    $( document ).ready(function() {
+      $(".fancy").fancybox({
+        openEffect  : 'fade',
+        closeEffect : 'fade',
+        arrows: false,
+        closeBtn: true
+      });
+     
+      $(".dropdown").click(function(){
+        if ($(this).hasClass("open"))  $(this).removeClass("open",200,"swing");
+        else $(this).addClass("open",200,"swing");
+      });
+     
+     
+    });
+  </script>
+</body>
+</html>
