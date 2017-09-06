@@ -1790,6 +1790,7 @@ div.colour{
 
 	&__field {
 		font-size: 14px;
+		margin-bottom: 10px;
 	}
 }
 
@@ -1803,8 +1804,8 @@ div.colour{
 		position:relative;
 		display:block;
 		margin-bottom:15px;
-		padding: 5px 15px;
-		
+		padding: 0 15px;
+		line-height: 30px;
 		text-align:left;
 		background-color: #ffffff;
 		color:#000;
@@ -1865,6 +1866,54 @@ div.colour{
 		}
 		.select__inner {
 			display: block;
+		}
+	}
+}
+
+
+.spinner {
+	display: block;
+	position: relative;
+	overflow: hidden;
+	
+	text-align: center;
+	
+
+
+
+	&__input {
+	  width: 100%;
+    
+    
+    padding: 0 5px;
+    height: 30px;
+    line-height: 30px;
+    border: none;
+    border-bottom: 1px solid #dcdcdc;
+    
+    font-size: 1em;
+    text-align: center;
+    z-index: 1;
+	}
+
+	&__button {
+		position: absolute;
+		width: 30px;
+		height: 30px;
+		line-height: 30px;
+
+		background-color: #dadee1;
+		top: 0;
+		
+		cursor: pointer;
+		z-index: 2;
+
+		&--up {
+			right: 0;
+		}
+
+		&--down {
+			left: 0;
 		}
 	}
 }

@@ -70,15 +70,19 @@
           <div class="product-page-info">
             <div class="product-adds">
               <ul class="product-types">
+                <input type="hidden" >
                 <li class="product-types__item product-types__item--active">
+                  <input type="hidden" name="option[386][]" value="465" checked="checked">
                   <span class="product-types__volume">3 литра</span>
                   <span class="product-types__price">1445 р.</span>
                 </li>
                 <li class="product-types__item">
+                <input type="hidden" name="option[386][]" value="466">
                   <span class="product-types__volume">10 литров</span>
                   <span class="product-types__price">2340 р.</span>
                 </li>
                 <li class="product-types__item">
+                <input type="hidden" name="option[386][]" value="467">
                   <span class="product-types__volume">20 литров</span>
                   <span class="product-types__price">3400 р.</span>
                 </li>
@@ -93,14 +97,10 @@
                 <div class="options__item option">
                   <div class="option__label">Количество</div>
                   <div class="option__field">
-                    <div class="select">
-                      <input class="select__input" name="office" value="не определился" type="hidden">
-                      <div class="select__placeholder">1</div>
-                      <div class="select__inner">
-                        <div class="select__item">2</div>
-                        <div class="select__item">3</div>
-                        <div class="select__item">5</div>
-                      </div>
+                    <div class="spinner">
+                      <input class="spinner__input" value="2" type="text">
+                      <div class="spinner__button spinner__button--up">+</div>
+                      <div class="spinner__button spinner__button--down">-</div>
                     </div>
                   </div>
                 </div>
