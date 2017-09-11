@@ -1860,10 +1860,6 @@ div.colour{
 	}
 
 	&--opened {
-		&:after {
-			top:33px;
-			transform:rotate(-135deg);
-		}
 		.select__inner {
 			display: block;
 		}
@@ -1916,4 +1912,47 @@ div.colour{
 			left: 0;
 		}
 	}
+}
+
+
+
+.tabs {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+
+	margin-bottom: 15px;
+
+	&__item {
+		display: inline-block;
+		border: 1px solid #DBDCDE;
+		
+		background-color: #EDEEF0;
+
+		margin-right: 1px;
+		&--active {
+			background-color: #FFFFFF;
+			border-top:2px solid #FF7300;
+			border-bottom: none;
+		}
+	}
+
+	&__link {
+		display: block;
+		padding: 10px 30px;
+		text-decoration: none;
+	}
+
+}
+.tabs-content {
+	padding-left: 15px;
+	&__item {
+		display: none;
+
+		&--active {
+			display: block;
+		}
+	}
+
+
 }
